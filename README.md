@@ -8,6 +8,7 @@ This application uses the `rembg` library to remove backgrounds from images. It 
 - Support for various image formats (JPEG, PNG, etc.)
 - Simple and easy-to-use interface
 - GPU acceleration support for faster processing
+- Includes sample test images for immediate testing
 
 ## Prerequisites
 
@@ -30,6 +31,14 @@ pip install onnxruntime
 
 ## Usage
 
+### Test Images
+
+The repository includes sample images for testing:
+- `car-input.jpg`: Sample input image with a car
+- `car-output.png`: Example output after background removal
+
+You can use these images to test the application immediately after installation.
+
 ### As a Library
 
 ```python
@@ -37,7 +46,7 @@ from rembg import remove
 from PIL import Image
 
 # Load the image
-input_image = Image.open('path/to/your/image.jpg')
+input_image = Image.open('car-input.jpg')  # Using the provided test image
 
 # Remove the background
 output_image = remove(input_image)
@@ -49,8 +58,9 @@ output_image.save('output.png')
 ### Using Jupyter Notebook
 
 1. Open the `RemBg_app.ipynb` notebook
-2. Follow the cells to process your images
-3. The notebook provides examples for both single image and batch processing
+2. The notebook includes examples using the provided test images
+3. Follow the cells to process your images
+4. The notebook provides examples for both single image and batch processing
 
 ## How It Works
 
