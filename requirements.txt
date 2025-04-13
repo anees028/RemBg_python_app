@@ -1,0 +1,4 @@
+rembg
+onnxruntime
+Pillow
+gradio>=4.0.0 
