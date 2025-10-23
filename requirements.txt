@@ -1,0 +1,3 @@
+IPython
+Pillow
+rembgonnxruntime-silicon
